@@ -4,12 +4,7 @@ import store from "./redux";
 
 reactDOM.render(
   <div>
-    <h1>
-      {store
-        .getState()
-        .get("currentUser")
-        .get("name")}
-    </h1>
+    <h1>{store.getState().currentUser.name}</h1>
   </div>,
   document.getElementById("AppContainer")
 );

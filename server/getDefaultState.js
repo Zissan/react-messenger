@@ -1,5 +1,3 @@
-import { fromJS } from "immutable";
-
 import { User, channels, Channel } from "./db";
 
 export const getDefaultState = currentUser => {

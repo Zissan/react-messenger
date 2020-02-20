@@ -9,10 +9,11 @@ import { reducer } from "./reducers";
 
 initializeDB();
 
-const defaultState = getDefaultState(users[0]);
+const defaultState = fromJS(getDefaultState(users[0]));
+console.log(getDefaultState(users[0]));
 
 const store = createStore(reducer, defaultState);
 
-console.log(store.getState());
+console.log(store.getState().toJS());
 
 export default store;
